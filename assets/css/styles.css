@@ -34,6 +34,7 @@ html {
 
 /* CSS Resets */
 
+
 *{ 
 	margin : 0;
 	padding: 0;
@@ -49,10 +50,15 @@ a {
 	color:var(--three-color);
 }
 
+.header {
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+}
 
 body {
  font-family: var(--font-family);
- 
+ background-color:#FAD38C ;
 }
 
 nav {
@@ -62,12 +68,22 @@ nav {
 	z-index: 1;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 1.5rem 3.5rem;
 	
+	padding: 1.5rem 3.5rem;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+	background-color:#4efeff;
+	opacity: 0.6;
+	
 }
 
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.navbar a {
+	float: left;
+}
 nav h1 {
 	color:var(--secondary-shadow);
 	transition: var(--transition);
@@ -81,7 +97,7 @@ nav ul {
 nav ul li{
 	font-weight: var(--bold-font);
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .burger-menu {
@@ -174,7 +190,7 @@ justify-content: center;
 }
 
 .skills-wrapper img {
-	padding: 1.25rem;
+	padding: 10px;
 }
 .icon {
 	width: 11.875rem;
@@ -191,9 +207,10 @@ justify-content: center;
 
 .projects {
 	background-color: transparent ;
-	padding: 32px 0;
+	padding-top: 40px;
 	margin-top: 2rem;
 }
+
 
 .project-pic {
 	width: 65%;
@@ -204,6 +221,7 @@ justify-content: center;
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 10px;
 }
 
 .projects-title {
@@ -214,7 +232,7 @@ justify-content: center;
 .project-container {
 	text-align: center;
 	width: 21.875rem;
-	padding: 1rem;
+	padding: 20px;
 }
 
 .project-container p {
@@ -232,9 +250,11 @@ justify-content: center;
 .project-card {
 	background-color: var(--bg-color1);
 	border-radius: 11px;
-	box-shadow: 0 3px 10px var(--primary-shadow);
-	padding: 20px;
-	margin: 10px;
+	box-shadow: 0 3px 10px;
+	margin-top: 10px;
+	
+	
+	
 }
 
 .contact {
@@ -267,17 +287,14 @@ justify-content: center;
 
 .contact-form-container .input-field {
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 5px;
-	border: none;
-	border: 2px outset var(--nine-color);
-	font-size: 0.875rem;
-	outline: none;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border : 1px solid #ccc;
+	border-radius: 4px;
 }
 
+
 .input-field::placeholder {
-	padding: 0.5rem;
 	color:var(--primary-color);
 }
 
@@ -299,6 +316,19 @@ justify-content: center;
 	font-weight: var(--bolder-font);
 	border-color: var(--secondary-shadow);
 	cursor: pointer;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 1%;
+	bottom: 50%;
+}
+
+.socicon {
+	width: 2rem;
+	height: 2rem;
 }
 
 
