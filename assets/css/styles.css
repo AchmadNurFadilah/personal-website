@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-	--font-family:"Roboto", sans-serif;
+	--font-family:"Times New Roman", Times, serif;
 	--normal-font: 400;
 	--bold-font: 700;
 	--bolder-font: 900;
@@ -29,6 +29,7 @@
 
 html {
 	scroll-behavior: smooth;
+	
 
 }
 
@@ -47,7 +48,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--bg-color1);
+	
 }
 
 .header {
@@ -131,7 +132,7 @@ nav ul {
 
 
 .burger-menu {
-	color: grey;
+	color: var(--bg-color1);
 	font-size: 20px;
 	border: 0;
 	background-color: transparent;
@@ -217,10 +218,13 @@ padding: 2px;
 }
 
 .skills {
-	max-width: 68.75rem;
-	margin:auto;
+	max-width: 70rem;
+	margin: auto;
 	text-align: center;
-	margin-top: 2.5rem;
+	margin-top: 5rem;
+	margin-bottom: 4rem;
+	gap: 2rem;
+	padding: 7rem;
 }
 
 .skill-header {
@@ -415,7 +419,7 @@ gap: 10px;
 
 @media screen and (max-width: 720px) {
 	.topnav .search-container {
-		float: none;
+		float: right;
 		
 	}
 	.topnav a, .topnav input[type=text], .topnav .search-container button {
@@ -441,6 +445,14 @@ footer {
 	margin: 2rem 0 0;
 }
 
+.scroll-up {
+	position: fixed;
+	right: 0.5%;
+	bottom: 5%;
+	cursor: pointer;
+}
 
-
-
+.up-arrow {
+	width: 3rem;
+	height: 3rem;
+}
